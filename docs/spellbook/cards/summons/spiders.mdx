@@ -1,0 +1,27 @@
+---
+authors: FluentPython
+slug: spiders
+updatedAt: 2024-11-25
+tags:
+  - Summon
+  - Common
+  - 3MP
+  - Front-Row
+  - Damage
+---
+
+# SPIDERS
+
+import createCardDetailsBySlug from "/src/components/createCardDetailsBySlug";
+
+export const WithSlug = createCardDetailsBySlug("spiders");
+
+<WithSlug showBasicInfo={true} />
+
+## Description
+
+<WithSlug showDescription={true} />
+
+## Stats
+
+<WithSlug showStats={true} />
