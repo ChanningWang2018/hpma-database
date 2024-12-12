@@ -111,7 +111,7 @@ const config = {
             items: [
               {
                 label: "Spellbook",
-                to: "/docs/spellbook/intro",
+                to: "/docs/spellbook/cards",
               },
               {
                 label: "CareerResearch",

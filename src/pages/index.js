@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="OWLLAMA'S HPMA DATABASE"
+      description="OWLLAMA'S HPMA DATABASE. This website serves as a comprehensive database for Harry Potter Magic Awakened (HPMA), offering detailed statistics and community-shared strategies. It aims to be a valuable resource for players to deepen their understanding of the game and improve their gameplay."
     >
       <HomepageHeader />
       <main>

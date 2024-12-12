@@ -1,7 +1,7 @@
 {
   "version": "0.0.0",
   "description": "HPMA card level data",
-  "updatedAt": "2024-11-25",
+  "updatedAt": "2024-12-12",
   "abbr": ["mp", "dps"],
 
   "data": [
@@ -2006,6 +2006,115 @@
       "stats": null
     },
     {
+      "slug": "the-tales-of-beedle-the-bard",
+      "name": "THE TALES OF BEEDLE THE BARD",
+      "description": "Applies 1 stackable Death's Mark to a random opposing duellist (Time-Turner future self excluded). \n*Adds a Death card to the top of your draw pile if one isn't already present. Play the Death card and pay a price to perform an AoE attack at the opponent with the highest number of Death's Mark stacks in the arena. \n* Death is a 4-cost Derivative Card. The price paid to Death is a percentage of your current Health. \n* Death's Mark can stack up to 4 times. New marks will prioritize targets that haven't reached the maximum stack. \n* If multiple targets have the same highest stack count, Death will randomly select one to apply damage. \n* When damaging targets with 4 Death's Marks, Death triggers a brief freeze effect. During this freeze, all attacks, effects, and participants are suspended, except for the Death card, which remains active. \n* If a target is hit by Death's attack, its Death's Mark stack resets. If a player target with Death's Marks is defeated by other units, its mark stack remains when it is rescued.",
+      "category": "spell",
+      "rarity": "legendary",
+      "mp": 3,
+      "type": ["damage", "control"],
+      "stats": {
+        "static": {
+          "range": 30,
+          "target": "groundAndAir",
+          "priceCoefficient": "6%"
+        },
+        "dynamic": [
+          {
+            "level": 9,
+            "death'sMark1": 137,
+            "death'sMark2": 274,
+            "death'sMark3": 426,
+            "death'sMark4": 682
+          },
+          {
+            "level": 10,
+            "death'sMark1": 147,
+            "death'sMark2": 293,
+            "death'sMark3": 456,
+            "death'sMark4": 730
+          },
+          {
+            "level": 11,
+            "death'sMark1": 157,
+            "death'sMark2": 314,
+            "death'sMark3": 488,
+            "death'sMark4": 781
+          },
+          {
+            "level": 12,
+            "death'sMark1": 168,
+            "death'sMark2": 336,
+            "death'sMark3": 522,
+            "death'sMark4": 836
+          },
+          {
+            "level": 13,
+            "death'sMark1": 180,
+            "death'sMark2": 360,
+            "death'sMark3": 559,
+            "death'sMark4": 895
+          },
+          {
+            "level": 14,
+            "death'sMark1": 193,
+            "death'sMark2": 385,
+            "death'sMark3": 598,
+            "death'sMark4": 958
+          },
+          {
+            "level": 15,
+            "death'sMark1": 207,
+            "death'sMark2": 412,
+            "death'sMark3": 640,
+            "death'sMark4": 1025
+          },
+          {
+            "level": 16,
+            "death'sMark1": 221,
+            "death'sMark2": 441,
+            "death'sMark3": 685,
+            "death'sMark4": 1097
+          },
+          {
+            "level": 17,
+            "death'sMark1": 236,
+            "death'sMark2": 472,
+            "death'sMark3": 733,
+            "death'sMark4": 1174
+          },
+          {
+            "level": 18,
+            "death'sMark1": 253,
+            "death'sMark2": 505,
+            "death'sMark3": 784,
+            "death'sMark4": 1256
+          },
+          {
+            "level": 19,
+            "death'sMark1": 271,
+            "death'sMark2": 540,
+            "death'sMark3": 839,
+            "death'sMark4": 1344
+          },
+          {
+            "level": 20,
+            "death'sMark1": 290,
+            "death'sMark2": 578,
+            "death'sMark3": 898,
+            "death'sMark4": 1438
+          },
+          {
+            "level": 21,
+            "death'sMark1": 310,
+            "death'sMark2": 618,
+            "death'sMark3": 961,
+            "death'sMark4": 1539
+          }
+        ]
+      }
+    },
+    {
       "slug": "thunderstorm",
       "name": "THUNDERSTORM",
       "description": "Summons a Thunderbird to call upon a thunderstorm that casts 15 bolts of lightning. \n* Each lightning bolt will hit a random opponent unit, and apply a Heal Reduction effect. \n* For each opponent that the lightning defeats, its Damage increases by 10% Stacks up to 5 times. \n* After defeating five opponent units, the remaining lightning bolts will strike all opponent units.",
@@ -2016,7 +2125,7 @@
       "stats": {
         "static": {
           "range": "entireArea",
-          "减疗幅度": "-60%",
+          "healReduction": "-60%",
           "target": "groundAndAir",
           "reductionDuration": 3.75
         },
@@ -2079,6 +2188,47 @@
           { "level": 19, "health": 760 },
           { "level": 20, "health": 813 },
           { "level": 21, "health": 870 }
+        ]
+      }
+    },
+    {
+      "slug": "transfiguration",
+      "name": "TRANSFIGURATION",
+      "description": "Casts the Transfiguration Spell. While shapeshifted, enemies take more Damage. The transformation effect ends after taking Damage. \n* When the Transfiguration Spell hits an enemy unit, it bounces up to three times between nearby enemy units. \n* When hit, non-player units will be transfigured, and cannot attack for 3.5 seconds. \n* When hit, player units will not be transfigured, instead, they will be slowed by 50% and effect duration is reduced by 40%. \n* Player Basic Attacks on Transfigured units neither deal additional damage nor remove the effect.",
+      "category": "spell",
+      "rarity": "epic",
+      "mp": 2,
+      "type": ["control"],
+      "stats": {
+        "static": {
+          "bounces": 3,
+          "target": "groundAndAir",
+          "transfigurationDamageRate": 3,
+          "controlDuration": 3.5,
+          "movement": "-50%"
+        },
+        "dynamic": [
+          { "level": 1, "damageBonusCap": 36 },
+          { "level": 2, "damageBonusCap": 39 },
+          { "level": 3, "damageBonusCap": 41 },
+          { "level": 4, "damageBonusCap": 44 },
+          { "level": 5, "damageBonusCap": 47 },
+          { "level": 6, "damageBonusCap": 50 },
+          { "level": 7, "damageBonusCap": 54 },
+          { "level": 8, "damageBonusCap": 58 },
+          { "level": 9, "damageBonusCap": 62 },
+          { "level": 10, "damageBonusCap": 66 },
+          { "level": 11, "damageBonusCap": 71 },
+          { "level": 12, "damageBonusCap": 76 },
+          { "level": 13, "damageBonusCap": 81 },
+          { "level": 14, "damageBonusCap": 87 },
+          { "level": 15, "damageBonusCap": 93 },
+          { "level": 16, "damageBonusCap": 99 },
+          { "level": 17, "damageBonusCap": 106 },
+          { "level": 18, "damageBonusCap": 114 },
+          { "level": 19, "damageBonusCap": 122 },
+          { "level": 20, "damageBonusCap": 130 },
+          { "level": 21, "damageBonusCap": 139 }
         ]
       }
     },
