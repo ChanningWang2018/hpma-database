@@ -16,10 +16,13 @@ const config = {
   trailingSlash: false,
 
   // Set the production url of your site here
-  url: "https://ChanningWang2018.github.io",
+  url:
+    process.env.PLATFORM === "netlify"
+      ? "https://hpma-database.netlify.app"
+      : "https://ChanningWang2018.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/hpma-database/",
+  baseUrl: process.env.PLATFORM === "netlify" ? "/" : "/hpma-database/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
