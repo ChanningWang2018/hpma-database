@@ -1,7 +1,7 @@
 {
   "version": "0.0.0",
   "description": "HPMA card level data",
-  "updatedAt": "2024-12-12",
+  "updatedAt": "2024-12-17",
   "abbr": ["mp", "dps"],
 
   "data": [
@@ -811,8 +811,8 @@
       }
     },
     {
-      "slug": "expecto-potronum",
-      "name": "EXPECTO POTRONUM",
+      "slug": "expecto-patronum",
+      "name": "EXPECTO PATRONUM",
       "description": "Casts the Patronus Charm and generates a long lasting barrier. Passing through the barrier will grant Ranged Attack and Healing Bonuses for all Ally Units. \n*The Patronus Barrier can enhance damage and healing. Effect range +25%. Projectile speed +40%. \n* Opponents hit by Enhanced Spells for the first time will receive additional damage, increasing as the level of your Expecto Patronum Card does. \n* Patronus Bonuses are stackable, but their effects will be further reduced as their numbers increase. \n* Dark Spells will not receive the bonus.",
       "category": "spell",
       "rarity": "mythic",
@@ -2011,7 +2011,7 @@
       "description": "Applies 1 stackable Death's Mark to a random opposing duellist (Time-Turner future self excluded). \n*Adds a Death card to the top of your draw pile if one isn't already present. Play the Death card and pay a price to perform an AoE attack at the opponent with the highest number of Death's Mark stacks in the arena. \n* Death is a 4-cost Derivative Card. The price paid to Death is a percentage of your current Health. \n* Death's Mark can stack up to 4 times. New marks will prioritize targets that haven't reached the maximum stack. \n* If multiple targets have the same highest stack count, Death will randomly select one to apply damage. \n* When damaging targets with 4 Death's Marks, Death triggers a brief freeze effect. During this freeze, all attacks, effects, and participants are suspended, except for the Death card, which remains active. \n* If a target is hit by Death's attack, its Death's Mark stack resets. If a player target with Death's Marks is defeated by other units, its mark stack remains when it is rescued.",
       "category": "spell",
       "rarity": "legendary",
-      "mp": 3,
+      "mp": 2,
       "type": ["damage", "control"],
       "stats": {
         "static": {
